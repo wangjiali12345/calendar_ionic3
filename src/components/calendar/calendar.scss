@@ -1,0 +1,35 @@
+ion-grid{
+    div{
+        ion-row{
+            ion-col {
+                &.col {
+                    padding: 5px 0;
+                }
+
+                p{
+                    margin: 0 auto;
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                }
+            }
+            .selectedDay {
+                p {
+                    color: white;
+                    border-radius: 50%;
+                    background-color: #2a579a;
+                    color: #FFFFFF;
+                }
+            }
+            .today {
+                p {
+                    border-radius: 50%;
+                    border: 1px solid #2a579a;
+                   
+                }
+            }
+        }
+    }
+}
+  

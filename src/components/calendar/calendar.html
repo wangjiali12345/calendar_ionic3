@@ -1,0 +1,14 @@
+﻿<ion-grid>
+    <ion-row >
+        <ion-col width-14 *ngFor="let week of wHead">
+            <p>{{week}}</p>
+        </ion-col>
+    </ion-row>
+    <div>
+        <ion-row *ngFor="let week of month">
+            <ion-col *ngFor="let day of week" [class.today]="ismonthtoday(day)" [class.selectedDay]="isSelectedmonthDay(day)" (click)="selectmonthDay(day)">
+                <p>{{toMonthDay(day)}}</p>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-grid>
